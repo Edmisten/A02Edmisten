@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jake</title>
+  <link type="text/css" rel="stylesheet" href="Edmisten_Jake.css"/>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div id="jumbotron text-center">
+		<nav>
+			<ul>
+				<li><a href="index.html">Dejan</a></li>
+				<li><a href="shirts.html">Apparel</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="shop.html">Calculate</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="content">
+		<h2 class="head">Calculate</h2>
+		<form class="form-horizontal">
+			<div class="form-group">
+				<label id="input_label" for="label">1st #</label>
+				<input type="text" id="num1" placeholder="0" size="3">
+			</div>
+			<div class="form-group">
+				<label id="input_label" for="label">2nd #</label>
+				<input type="text" id="num2" placeholder="0" size="3">
+			</div>
+			<button type="button" id="calculateButton" onclick="calc()">Calculate</button>		
+			<div id="result"> Result</div>
+			
+		</form>
+	</div>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="edmisten.js"></script>
+</body>
+</html>
