@@ -14,6 +14,6 @@ function multiply(num1, num2){
         let x = num1 * num2;
         $("#result").html("The result is " + x);
       }catch(er){
-        resultMessage.innerHTML="Error "+er;       
+         $("#result").html("Error "+er);       
     }
 }
