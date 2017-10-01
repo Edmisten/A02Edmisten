@@ -1,0 +1,17 @@
+nav{
+	background-image: url("images/background.png");
+}
+
+nav,ul {
+	list-style-type: none;
+	display: block;
+	color: white;
+	word-spacing: 30px;
+	padding: .25px;
+	text-align: center;
+	font-size: 125%;
+}
+
+li {
+	display: inline;
+}

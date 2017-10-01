@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>M04 Sheep Ranch</title>
+	<link rel="stylesheet" href="M04.css">
+</head>
+
+<body>
+	<!-- BootStrap navbar menu changes with the screen size-->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="shirts.html">Shirts</a></li>
+					<li><a href="shorts.html">Shorts</a></li>
+					<li><a href="socks.html">Socks</a></li>
+					<li><a href="shoes.html">Shoes</a></li>
+					<li><a href="hats.html">Hats</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- A BootStrap container is used to adjust the layout of the contents based on screen size. .container uses pre-built screen sizes, while .container-fluid adjusts continously.-->
+	<div class="container-fluid">
+		<!-- BootStrap grid system using one row that could have several columns (when the screen size is large enough) -->
+		<div class="row">
+			<div class="col-sm-12">
+				<p>This assignment introduces simplified scripting with jQuery. </p>
+				<p>The code is available at <a href="https://bitbucket.org/professorcase/M04">https://bitbucket.org/professorcase/M04</a>.</p>
+				<p>Results of the unit tests are available at <a href="test/test.html">test/test.html</a>.</p>
+				<br/>
+				<p>Currently, the application gets the user's name and the size of their ranch. The app calculates square miles and estimates
+					how many sheep they can hold on their land.</p>
+				<br/>
+				<p>Your goal is to finish transitioning the app to jQuery and native JavaScript.</p>
+				<br/>
+				<p>Modify at least one line of code in each of the following functions to use jQuery:</p>
+				<ol>
+					<li>getEstimate()</li>
+					<li>showExample()</li>
+					<li>addImage()</li>
+					<li>Change the application name displayed in the menu to a suitable name for your application.</li>
+				</ol>
+				<br>
+				<p>Click the button to start the app.</p>
+				<br>
+				<!-- http://v4-alpha.getbootstrap.com/components/buttons/ -->
+				<button onclick="App.launch()" class="btn btn-lg btn-danger">Click me</button> <br/> <br/>
+			</div>
+			<div class="col-sm-12">
+				<br/>
+				<span id="first"></span> <span id="last"></span><br/>
+				<span id="width"></span> <span class="displayText">x</span> <span id="length"></span> <span class="displayText">=</span>
+				<span id="area"></span> <span class="displayText">sq miles</span><br/>
+				<span class="displayText">~</span> <span id="count"> </span> <span class="displayText">sheep</span><br/>
+
+				<span id="displayPlace">&nbsp;</span>
+				<div class="displayExploreButtons">
+					<button onclick="App.exploreHtml()" class="btn btn-lg btn-primary" id="btnExploreHtml">Explore the HTML</button>
+					<button onclick="App.exploreCode()" class="btn btn-lg btn-primary" id="btnExploreCode">Explore the Code</button>
+				</div>
+				<div class="col-sm-12">
+					<footer>
+						<p>&copy; NWMSU Web Apps Fall 2016</p>
+					</footer>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- /container -->
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="M04.js"></script>
+</body>
+
+</html>
